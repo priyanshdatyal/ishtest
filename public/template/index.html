@@ -1,0 +1,508 @@
+{%load static %}
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <title>Ishita Simgh</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{% static '/res/icons/icon.ico' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="{% static '/res/icons/icon.ico' %}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English|Playfair+Display:900" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700|Poppins" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English|Playfair+Display:900" rel="stylesheet">
+
+
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="{% static '/css/aaastyles.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static '/css/home.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static '/css/about.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static '/css/portfolio.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static '/css/contact.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static '/css/themes' %}.css" />
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+
+
+</head>
+
+<body id="body">
+
+    <div class="preloader" id="preloader">
+        <img src="{% static '/res/images/loader.gif' %}" />
+    </div>
+    <div class="menu" id="main_menu">
+        <ul>
+            <li>
+                <a class="drop-item" id="ad" href="#home"><i class="fa fa-fw fa-home"></i><span>Home</span></a>
+            </li>
+            <li>
+                <a class="drop-item" id="ad" href="#abt"><i class="fa fa-fw fa-male"></i><span>About</span></a>
+            </li>
+            <li>
+                <a class="drop-item" id="ad" href="#port"><i class="fa fa-fw fa-folder"></i><span>Portfolio</span></a>
+            </li>
+            <li>
+                <a class="drop-item" id="ad" href="#contact"><i class="fa fa-fw fa-phone"></i><span>Contact</span></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="styles-changer" id="shiti" onclick="themeChanger()">
+        <div class="day-night-toggle s-icon" id="daynighttoggle">
+            <i></i>
+        </div>
+
+    </div>
+
+
+    <div class="contains">
+        <section id="home">
+
+            <div class="ropes">
+                <div class="rope-hooks">
+                    <div class="one">
+
+                    </div>
+                    <div class="two">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="con">
+                <div class="name">
+                    <div class="name-container">
+                        <div class="first-name">
+
+                            <p>i
+                                <h1>S</h1>
+                            </p>
+                            <p>hita</p>
+                        </div>
+                        <div class="last-name">
+                            <br>
+                            <br>
+                            <br>
+                            <p>ingh</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="profilepic">
+                    <div class="actual-pic">
+                        <div class="u">
+                            <img src="{% static '/res/images/uu.png' %}" />
+                        </div>
+                    </div>
+                    <div class="just-design">
+                    </div>
+                    <div class="actual-pic">
+                        <div class="l">
+                            <img src="{% static '/res/images/ll.png' %}" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="abt" class="abt">
+            <div class="abttag">
+                <h1> About Me</h1>
+            </div>
+            <div class="holes-for-hook">
+                <div class="hooks">
+                    <div class="one">
+
+                    </div>
+                    <div class="two">
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="forphoneabt">
+
+                <div class="infocard">
+
+                    <div class="abtimage">
+                        <img src="{% static '/res/images/prof-abt.jpg' %}" />
+                    </div>
+                    <div class="inside-descr">{{info.0.about | safe}}
+                    </div>
+                    <div class="skill-button" onclick="showskills()">
+                        See Skills
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div id="abtstuff">
+                <div class="rooftl"></div>
+                <div class="rooftr"></div>
+                <div class="roofbl"></div>
+                <div class="roofbr"></div>
+                <div class="abt-container">
+                    <div class="frontwall">
+                        <div class="wallpic">
+                            <img src="{% static '/res/images/profile.png' %}" />
+
+                            <div class="abtish">
+                                <p>Ishita Singh <br> Interior Designer <br> 20</p>
+                            </div>
+                            <div class="frameglass">
+
+                            </div>
+                            <div class="wallframe">
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="ceillight"></div>
+                <div class="abtbed"></div>
+                <div class="worktable"></div>
+                <div class="bookshelf"></div>
+                <div class="window">
+                    <img id="winim" src="{% static '/res/images/sun.gif' %}" />
+                </div>
+                <div class="glass-win">
+                </div>
+                <div class="winfr">
+                    <img src="{% static '/res/assets/winfr.png' %}" />
+                </div>
+                <div class="winup"></div>
+                <div class="curtains">
+                    <img id="curtainn" src="{% static '/res/assets/CloseCurtain.png' %}" />
+                    <div class="pullstring">
+                        <div class="puller" onclick="curTrigger()"></div>
+                    </div>
+                </div>
+
+
+                <div class="fullroom" id="fullroom">
+
+                    <div class="infocard">
+                        <img src="{% static '/res/images/profile.png' %}" />
+                        <div class="inside-descr">
+                            {{info.0.about | safe}}
+                        </div>
+
+                        <div class="skill-button" onclick="showskills()">
+                            See Skills
+                        </div>
+                    </div>
+                    <img id="hangboard" src="{% static '/res/assets/doorhanger.png' %}" />
+
+                    <div class="roof">
+                        <img src="{% static '/res/assets/roofis.png' %}" />
+                    </div>
+
+                </div>
+
+
+                <div class="aboutdoor" id="doorcon" onClick="doorTrigger()">
+                    <img id="doorimg" src="{% static '/res/assets/doorOp.png' %}" />
+                </div>
+
+
+
+            </div>
+
+            <div class="skills-window" id="skills-window">
+                <h1> Skills </h1>
+                <ul>
+                    {% for s in skills %}
+                    <li>
+                        <div class="ski-im-con">
+                            <img src="{{s.image_link}}">
+                        </div>
+                        <div class="skill-title">
+                            <span>
+                                
+                            {{s.skillname}}
+                            </span>
+                        </div>
+                    </li>
+
+                    {% empty %}
+
+                    <li>
+                        <div class="ski-im-con">
+                            <img src="https://dictionary.cambridge.org/images/thumb/cross_noun_002_09265.jpg?version=5.0.203">
+                        </div>
+                        <div class="skill-title">
+                            <span>No Data Dound
+                            </span>
+                        </div>
+                    </li>
+                    {% endfor %}
+
+                </ul>
+
+                <div class="close-skill-tab" onclick="closeSkillTab()">
+                    <span>
+                        X
+                    </span>
+                </div>
+            </div>
+
+        </section>
+        <section id="port">
+            <div class="fullit">
+
+                <div class="justbg"></div>
+
+                <div class="porttitle">
+                    <h2 id="makeit">Portfolio</h2>
+                </div>
+
+                <div class="grassit">
+                    <img src="{% static 'res/assets/grassit.png' %}" />
+                </div>
+
+                <div class="portmenu">
+                    <div id="portList" class="portList">
+                        <h2> Select Category</h2>
+                        <ul>
+                            {% for c in categs %}
+
+                            <li id="{{c.cat_id}}">
+                                <div id="cat_ids" class="cat_ids">
+                                    <input type="radio" name="cat_id" id="{{c.category_id}}" value='{{c.category_id}}' onclick="changecont(this.value)">
+                                    <label for="{{c.category_id}}">{{c.title}}</label>
+                                </div>
+                            </li>
+                            {% empty %}
+                            <li id="-102">
+                                <div id="cat_ids" class="cat_ids">
+                                    <input type="radio" name="cat_id" id="none">
+                                    <label for="none">No Categories are added</label>
+                                </div>
+                                <h1 style="color:red; text-align: center; width:100%"> No Data Found</h1>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="contentList" id="portcont">
+                    <ul>
+                        <p><b>Designs</b></p>
+
+                        {% for p in posts %}
+                        <li id="{{p.title}}~{{p.description}}~{{p.post_id}}" onclick="setinframe(this.id)">
+                            <div class="port-cont-card">
+                                <img src="/media/{{p.image}}" />
+                                <div class="content-info">
+                                    <h2>{{p.title}}</h2>
+                                    <div class="content-descr">
+                                        {{p.description | safe}}
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        {% empty %}
+                        <li id="none">
+                            <div class="port-cont-card">
+                                <img src="https://dictionary.cambridge.org/images/thumb/cross_noun_002_09265.jpg?version=5.0.203" />
+                                <div class="content-info">
+                                    <h2><br><b><b>Empty</b></b>
+                                    </h2>
+                                    <div class="content-descr">
+                                        List is Empty<br>No Data In this Category
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        {% endfor %}
+                        <br>
+                        <br>
+                    </ul>
+                </div>
+
+                <div class="mainframe">
+                    <div class="portimage">
+                        <div id="slider" class="slider">
+                            <ul id="imageList">
+                                <li> <img src="/media/{{header_photo.0.image}}" /></li>
+                                {% for po in photos %}
+                                <li> <img src="{{po.images.url}}" /></li>
+                                {% endfor %}
+                            </ul>
+                            <a class="control_next">&gt;</a>
+                            <a class="control_prev">
+                                &lt;</a>
+                        </div>
+
+                        <div class="slider_option">
+                            <input type="checkbox" id="checkbox">
+                            <label for="checkbox">Autoplay Slider</label>
+                        </div>
+                    </div>
+                    <div class="portimtitle">
+                        <h2 id="mainfrtitle">{{posts.0.title}}</h2>
+                        <div id="mainfrdesc" class="mainfrdesc">{{posts.0.description | safe}}
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+        <section id="contact">
+            <div class="cont-con">
+                <div class="cont-link-con">
+
+                    <div class="con-header">
+                        Contact
+                    </div>
+
+                    <div class="cont-links">
+                        <ul>
+                            <li>
+                                <div class="con-info-con">
+                                    <i class="fa fa fa-behance-square" aria-hidden="false" id="beh"> </i>
+                                    <a class="drop-item" id="f1" href="{{info.0.behance}}" target="blank">
+                                        <span>Behance | Ishita Singh</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="con-info-con">
+                                    <i class="fa fa fa-linkedin-square" aria-hidden="false" id="mail"></i>
+                                    <a class="drop-item" id="f1" href=" {{info.0.linkedin}}" target="blank">
+                                        <span>LinkedIn | Ishita Singh</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="con-info-con">
+                                    <i class="fa fa fa-twitter-square" aria-hidden="true" id="twi"></i>
+                                    <a class="drop-item" id="f1" href="mailto: {{info.0.gmail}}" target="blank">
+                                        <span>Gmail | Ishita Singh</span>
+                                    </a>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="con-greet">
+                        {{info.0.greetings | safe}}
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+    <script rel="javascript" type="text/javascript" src="{% static 'js/ScriptMain.js' %}"></script>
+    <script rel="javascript" type="text/javascript" src="{% static 'js/TrigCur.js' %}"></script>
+    <script rel="javascript" type="text/javascript" src="{% static 'js/doorT.js' %}"></script>
+    <script rel="javascript" type="text/javascript" src="{% static 'js/contentsafe.js' %}"></script>
+    <script rel="javascript" type="text/javascript" src="{% static 'js/CT.js' %}"></script>
+    <script rel="javascript" type="text/javascript" src="{% static 'js/setcontentinframe.js' %}"></script>
+    <script rel="javascript" type="text/javascript" src="{% static 'js/imageshifter.js' %}"></script>
+
+</body>
+{% autoescape off %}
+<script>
+    function changecont(valuee) {
+        $.ajax({
+            url: 'ajax/load_list',
+            data: {
+                'cat_id': valuee
+            },
+            success: function(data) {
+                $("#portcont").html(data);
+                server
+            }
+        });
+
+    }
+</script>
+
+{% endautoescape %}
+
+
+<script type="text/javascript">
+    var loader = document.getElementById("preloader");
+
+    var home = document.getElementById("home");
+    var abt = document.getElementById("abt");
+    var port = document.getElementById("port");
+    var cont = document.getElementById("contact");
+
+    window.addEventListener("load", function() {
+
+        setTimeout(function() {
+            loader.style.display = "none";
+        }, 50);
+
+
+        setTimeout(function() {
+            loader.style.opacity = "0";
+        }, 50);
+
+        setTimeout(function() {
+            home.style.display = "block";
+        }, 50);
+        setTimeout(function() {
+            abt.style.display = "block";
+        }, 50);
+        setTimeout(function() {
+            port.style.display = "block";
+        }, 50);
+        setTimeout(function() {
+            cont.style.display = "block";
+        }, 50);
+
+    });
+
+    function showskills() {
+        document.getElementById('skills-window').style.transition = "all 0.5 s linear";
+        document.getElementById('skills-window').style.display = "block";
+    }
+
+    function closeSkillTab() {
+        document.getElementById('skills-window').style.transition = "all 0.5 s linear";
+        document.getElementById('skills-window').style.display = "none";
+    }
+</script>
+
+
+
+
+
+</html>

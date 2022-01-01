@@ -1,0 +1,407 @@
+:root {
+    --nbg-is: rgb(195, 161, 73);
+}
+
+.ropes {
+    top: -10%;
+    position: relative;
+    width: 100%;
+    height: 115%;
+}
+
+.rope-hooks {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.rope-hooks .one {
+    display: none;
+    position: absolute;
+    left: 35%;
+    margin: 1em;
+    width: 2em;
+    height: 100%;
+    background: url('../res/images/rere.png') no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: 50;
+}
+
+.rope-hooks .two {
+    display: none;
+    position: absolute;
+    right: 35%;
+    margin: 1em;
+    width: 2em;
+    height: 100%;
+    background: url('../res/images/rere.png') no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: 50;
+}
+
+.con {
+    width: 80%;
+    height: 20%;
+    border-radius: 25px;
+    background: rgb(var(--sub-accent-color));
+    position: absolute;
+    top: 2.75%;
+    left: 10%;
+    z-index: 50;
+    box-shadow: -3px -3px 20px 0 black;
+    transition: all 1.5s linear;
+}
+
+.name {
+    display: block;
+    position: absolute;
+    top: 55%;
+    left: -825%;
+    height: 22.5%;
+    width: 1750%;
+    background: var(--nbg-is);
+    box-shadow: inset -3px -3px 20px 0 black;
+    padding: .75em;
+}
+
+.name-container {
+    width: 57.5%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    margin-left: -20%;
+    animation: moveacross 3.25s linear infinite;
+}
+
+@keyframes moveacross {
+    0% {
+        margin-left: 0%;
+        height: 100%;
+    }
+    50% {
+        height: 50%;
+    }
+    100% {
+        margin-left: 80%;
+        height: 100%;
+    }
+}
+
+.first-name {
+    display: flex;
+}
+
+.last-name {
+    display: block;
+    transform: translateX(6em) translateY(-8em);
+}
+
+.first-name p {
+    font-size: 3em;
+    color: rgb(var(--main-color));
+    animation: changeaccent 5s linear infinite;
+}
+
+.last-name p {
+    position: absolute;
+    font-size: 3em;
+    color: rgb(var(--main-color));
+    animation: changeaccent 5s linear infinite;
+}
+
+@keyframes changeaccent {
+    0% {
+        color: rgb(var(--main-color));
+    }
+    30% {
+        color: rgb(var(--main-color));
+    }
+    45% {
+        color: rgb(var(--main-accent-color));
+    }
+    95% {
+        color: rgb(var(--main-accent-color));
+    }
+    100% {
+        color: rgb(var(--main-color));
+    }
+}
+
+.first-name h1 {
+    font-size: 3.5em;
+    color: rgb(var(--main-color));
+}
+
+.name span {
+    font-size: 3em;
+    color: rgb(var(--main-color));
+}
+
+.name h1::first-letter {
+    float: left;
+    font-size: 2.5em;
+    margin-top: 0.2em;
+    line-height: 0.5em;
+    padding: 3px;
+    text-shadow: 2px 2px 15px black;
+}
+
+.profilepic {
+    width: 12em;
+    height: 12.5em;
+    top: 25%;
+    left: 47.5%;
+    display: block;
+    position: absolute;
+    transform: scale(1.75);
+    transform-origin: center;
+}
+
+.just-design {
+    display: none;
+    /* display: none; */
+}
+
+@keyframes spinit {
+    0% {
+        transform: skewX(0deg) skewY(30deg) translateX(-7.5em);
+    }
+    100% {
+        transform: skewX(360deg) skewY(30deg) translateX(-7.5em);
+    }
+}
+
+@keyframes spinitinphone {
+    0% {
+        border: 1px solid rgb(var(--main-accent-color));
+        left: 0%;
+    }
+    100% {
+        border: 1px solid rgb(var(--main-color));
+        left: 70%;
+    }
+}
+
+.actual-pic {
+    position: absolute;
+    margin: 0 0;
+}
+
+.actual-pic .u {
+    width: 12em;
+    height: 6em;
+    position: absolute;
+}
+
+.actual-pic .l {
+    width: 12em;
+    height: 6em;
+    position: absolute;
+    transform: translateY(3em);
+}
+
+.floral {
+    width: 25em;
+    height: 25em;
+    position: absolute;
+    background: url('../res/images/flor.png');
+    background-position: center center;
+    background-size: contain;
+    margin: 0 0;
+}
+
+.actual-pic img {
+    position: relative;
+    width: 6em;
+    height: 3em;
+    margin: 0 0;
+}
+
+@media screen and (min-width: 1366px) {
+    .ropes {
+        top: -10%;
+        position: relative;
+        width: 100%;
+        height: 115%;
+    }
+    .rope-hooks {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .rope-hooks .one {
+        display: none;
+        position: absolute;
+        left: 35%;
+        margin: 1em;
+        width: 2em;
+        height: 100%;
+        background: url('../res/images/rere.png') no-repeat;
+        background-position: center center;
+        background-size: cover;
+        z-index: 50;
+    }
+    .rope-hooks .two {
+        display: none;
+        position: absolute;
+        right: 35%;
+        margin: 1em;
+        width: 2em;
+        height: 100%;
+        background: url('../res/images/rere.png') no-repeat;
+        background-position: center center;
+        background-size: cover;
+        z-index: 50;
+    }
+    .con {
+        width: 80%;
+        height: 20%;
+        border-radius: 25px;
+        background: rgb(var(--sub-accent-color));
+        position: absolute;
+        top: 2.5%;
+        left: 10%;
+        z-index: 50;
+        box-shadow: -3px -3px 20px 0 black;
+        transition: all 1.5s linear;
+    }
+    .name {
+        display: inline-flex;
+        position: absolute;
+        top: 40%;
+        left: 20%;
+        width: 10%;
+        height: 40%;
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+        object-fit: contain;
+        background: transparent;
+        box-shadow: inset 0px 0px 0px 0 transparent;
+        padding: 1em;
+    }
+    .name-container {
+        width: 45%;
+        left: 12.5%;
+        position: absolute;
+        left: 0%;
+        animation: none;
+    }
+    .first-name {
+        display: flex;
+    }
+    .last-name {
+        display: block;
+        transform: translateX(9em) translateY(-10em);
+    }
+    .first-name p {
+        font-size: 5em;
+        color: rgb(var(--main-color));
+        animation: changeaccent 3s linear infinite;
+    }
+    .last-name p {
+        position: absolute;
+        font-size: 5em;
+        color: rgb(var(--main-color));
+        animation: changeaccent 3s linear infinite;
+    }
+    @keyframes changeaccent {
+        0% {
+            color: rgb(var(--main-color));
+        }
+        30% {
+            color: rgb(var(--main-color));
+        }
+        45% {
+            color: rgb(var(--main-accent-color));
+        }
+        95% {
+            color: rgb(var(--main-accent-color));
+        }
+        100% {
+            color: rgb(var(--main-color));
+        }
+    }
+    .first-name h1 {
+        font-size: 5em;
+        color: rgb(var(--main-color));
+    }
+    .name span {
+        font-size: 5em;
+        color: rgb(var(--main-color));
+    }
+    .name h1::first-letter {
+        float: left;
+        font-size: 2.5em;
+        margin-top: 0.2em;
+        line-height: 0.5em;
+        padding: 3px;
+        text-shadow: 2px 2px 15px black;
+    }
+    .profilepic {
+        width: 25em;
+        height: 25em;
+        top: 25%;
+        left: 57.5%;
+        display: block;
+        position: absolute;
+        transform: scale(1);
+    }
+    .just-design {
+        display: block;
+        position: absolute;
+        width: 35em;
+        height: 25em;
+        top: 5%;
+        left: 7.5%;
+        margin: 0;
+        border: 10px solid rgb(var(--main-color));
+        background-position: center center;
+        background-size: cover;
+        border-radius: 50%;
+        transform: skewX(0deg) skewY(-25deg) scale(1.0) translateX(-7.5em);
+        animation: spinit 3s linear infinite;
+    }
+    @keyframes spinit {
+        0% {
+            transform: skewX(0deg) skewY(30deg) translateX(-7.5em);
+        }
+        100% {
+            transform: skewX(360deg) skewY(30deg) translateX(-7.5em);
+        }
+    }
+    .actual-pic {
+        position: absolute;
+        margin: 0 0;
+    }
+    .actual-pic .u {
+        width: 25em;
+        height: 12.5em;
+        position: absolute;
+    }
+    .actual-pic .l {
+        width: 25em;
+        height: 12.5em;
+        position: absolute;
+        transform: translateY(12.5em);
+    }
+    .floral {
+        width: 25em;
+        height: 25em;
+        position: absolute;
+        background: url('../res/images/flor.png');
+        background-position: center center;
+        background-size: contain;
+        margin: 0 0;
+    }
+    .actual-pic img {
+        position: relative;
+        width: 25em;
+        height: 12.5em;
+        margin: 0 0;
+    }
+}

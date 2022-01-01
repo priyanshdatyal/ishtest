@@ -1,0 +1,266 @@
+.cont-con {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    z-index: 200;
+    background: url('../res/images/contbg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.cont-link-con {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.cont-link-con .con-header {
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    top: 5%;
+    margin: 0;
+    font-size: 1.75em;
+    text-align: center;
+    color: rgb(189, 155, 128);
+}
+
+.cont-links {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    align-self: center;
+    position: absolute;
+    width: 100%;
+    height: 72.5%;
+    top: 25%;
+    left: 0%;
+    padding: .25em;
+    z-index: 100;
+}
+
+.cont-links ul {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    position: absolute;
+    overflow-y: auto;
+}
+
+.cont-links ul::-webkit-scrollbar {
+    width: .5em;
+    height: 20%;
+    border: 10px solid rgba(var(--main-accent-color), .6);
+    border-radius: 7px;
+}
+
+.cont-links ul::-webkit-scrollbar-thumb {
+    width: 10%;
+    height: 10%;
+    background: rgba(var(--main-color), 1);
+    border: 2px solid transparent;
+    border-radius: 15px;
+    background-clip: content-box;
+}
+
+.cont-links ul li {
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    left: 20%;
+}
+
+.con-info-con {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.con-info-con a {
+    width: 100%;
+    text-align: center;
+    color: white;
+    display: block;
+    font-size: .75em;
+    margin: 0;
+    position: relative;
+    text-decoration: none;
+    filter: brightness(1) saturate(2);
+    border-radius: 5px;
+    background: rgba(189, 155, 128, .4);
+    margin-top: .75em;
+    margin-bottom: .75em;
+    padding: 0.25em;
+    transition: all .5s linear;
+}
+
+.con-info-con a:hover {
+    transform: scale(1.125);
+    background: rgb(189, 155, 128);
+}
+
+.con-info-con i {
+    color: white;
+    font-size: 2em;
+    text-decoration: none;
+    filter: brightness(1) saturate(1);
+}
+
+#beh {
+    color: #053eff;
+}
+
+#mail {
+    color: rgb(0, 111, 214);
+}
+
+#twi {
+    color: #1DA1F2;
+}
+
+.con-greet {
+    position: absolute;
+    width: 100%;
+    padding: .5em;
+    font-size: .75em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.555);
+    bottom: 0;
+}
+
+@media screen and (min-width: 1366px) {
+    .cont-con {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        display: block;
+        overflow: hidden;
+        z-index: 200;
+        background: url('../res/images/contbg.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    .cont-link-con {
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin: 0;
+        background: rgba(0, 0, 0, 0.75);
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+    .cont-link-con .con-header {
+        width: 100%;
+        position: absolute;
+        left: 0%;
+        top: 30%;
+        margin: 0;
+        font-size: 3em;
+        text-align: center;
+        color: rgb(189, 155, 128);
+    }
+    .cont-links {
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        align-self: center;
+        position: absolute;
+        width: 100%;
+        height: 45%;
+        top: 40%;
+        left: 0%;
+        padding: 2em;
+        z-index: 100;
+    }
+    .cont-links ul {
+        width: 100%;
+        position: absolute;
+    }
+    .cont-links ul::-webkit-scrollbar {
+        width: .5em;
+        height: 20%;
+        border: 10px solid rgba(var(--main-accent-color), .6);
+        border-radius: 7px;
+    }
+    .cont-links ul::-webkit-scrollbar-thumb {
+        width: 10%;
+        height: 10%;
+        background: rgba(var(--main-color), 1);
+        border: 2px solid transparent;
+        border-radius: 15px;
+        background-clip: content-box;
+    }
+    .cont-links ul li {
+        position: relative;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 60%;
+        left: 20%;
+    }
+    .con-info-con {
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+    }
+    .con-info-con a {
+        width: 100%;
+        text-align: center;
+        color: white;
+        display: block;
+        font-size: 1.25em;
+        margin: 0;
+        position: relative;
+        text-decoration: none;
+        filter: brightness(1) saturate(2);
+        border-radius: 10px;
+        background: rgba(189, 155, 128, .6);
+        margin-top: .75em;
+        margin-bottom: .75em;
+        padding: 0.25em;
+        transition: all .5s linear;
+    }
+    .con-info-con a:hover {
+        transform: scale(1.125);
+        background: rgb(189, 155, 128);
+    }
+    .con-info-con i {
+        color: white;
+        font-size: 2em;
+        text-decoration: none;
+        filter: brightness(1) saturate(1);
+    }
+    #beh {
+        color: #053eff;
+    }
+    #mail {
+        color: rgb(0, 111, 214);
+    }
+    #twi {
+        color: #1DA1F2;
+    }
+    .con-greet {
+        position: absolute;
+        width: 100%;
+        font-size: 1em;
+        text-align: center;
+        color: white;
+        bottom: 0;
+    }
+}

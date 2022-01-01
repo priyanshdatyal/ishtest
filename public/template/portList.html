@@ -1,0 +1,19 @@
+<ul>
+    <p><b>Designs</b></p>
+
+    {% for p in posts %}
+    <li id="{{p.title}}~{{p.description}}~{{p.post_id}}" onclick="setinframe(this.id )">
+        <div class=" port-cont-card ">
+            <img src="/media/{{p.image}} " />
+            <div class="content-info ">
+                <h2>{{p.title}}</h2>
+                <div class="content-descr ">
+                    {{p.description | safe}}
+                </div>
+            </div>
+        </div>
+    </li>
+    {% endfor %}
+    <br>
+    <br>
+</ul>

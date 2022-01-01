@@ -1,0 +1,862 @@
+.abttag {
+    position: relative;
+    width: 100%;
+    top: 2.75%;
+    left: 0;
+}
+
+.abttag h1 {
+    position: absolute;
+    font-size: 1em;
+    width: 100%;
+    padding-right: 1em;
+    text-align: end;
+    vertical-align: middle;
+    /* color: rgb(var(--main-accent-color)); */
+    color: white;
+}
+
+.abt-container {
+    position: relative;
+    top: 5%;
+    height: 95%;
+    width: 100%;
+    transition: scale 1.5s linear;
+    overflow: hidden;
+}
+
+#abtstuff {
+    position: relative;
+    top: 5%;
+    height: 95%;
+    width: 100%;
+    /* background: rgb(var(--sub-accent-color)); */
+    background: rgb(196, 197, 146);
+    display: none;
+}
+
+.fullroom {
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    display: none;
+    transform-origin: center;
+    background: url('../res/assets/brickwall.jpg');
+    border: 2px solid black;
+    filter: brightness(var(--bri)) saturate(var(--sat));
+    display: none;
+}
+
+.forphoneabt {
+    display: block;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+    position: absolute;
+    padding: 5%;
+}
+
+.forphoneabt .infocard {
+    display: inline-flex;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 10%;
+    left: 5%;
+    border-radius: 15px;
+    border: 3px solid rgb(var(--sub-accent-color));
+    color: rgb(var(--main-accent-color));
+    background: rgb(var(--main-color));
+    overflow: hidden;
+    display: block;
+    text-align: center;
+}
+
+.forphoneabt .infocard .abtimage {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    top: 0%;
+    left: 0%;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: calc( .5vw + .5vh);
+    padding: 1.5em;
+}
+
+.abtimage img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    object-fit: contain;
+    border-radius: 50px;
+    border-radius: calc( 1.5vw + 1.5vh);
+    box-shadow: 0px 0px 25px -5px black;
+}
+
+.forphoneabt .infocard .inside-descr {
+    padding: .25em;
+    font-size: 1em;
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    text-align: center;
+    height: 42.50%;
+    top: 50%;
+    color: rgb(var(--main-accent-color));
+    background: rgb(var(--sub-accent-color), 1);
+    vertical-align: middle;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px -5px black;
+    overflow-y: scroll;
+    padding: .5em;
+}
+
+.forphoneabt .infocard .inside-descr::-webkit-scrollbar {
+    width: .5em;
+    height: 20%;
+    border: 10px solid rgba(var(--main-accent-color), .6);
+    border-radius: 15px;
+    margin-right: .25em;
+}
+
+.inside-descr::-webkit-scrollbar-thumb {
+    width: 10%;
+    height: 10%;
+    background: rgba(var(--main-color), 1);
+    border: 2px solid transparent;
+    border-radius: 15px;
+    background-clip: content-box;
+}
+
+.skill-button {
+    width: 95%;
+    margin: 2.5%;
+    text-align: center;
+    height: fit-content;
+    padding: .25em;
+    border-radius: 7px;
+    background: rgba(var(--main-accent-color), 1);
+    color: rgba(var(--sub-accent-color), 1);
+    position: absolute;
+    bottom: 0;
+    font-size: 1em;
+    box-shadow: 0px 0px 25px -5px black;
+    left: 0%;
+}
+
+.skills-window {
+    width: 90%;
+    height: 82.5%;
+    background: rgba(var(--sub-accent-color), .7);
+    color: rgba(var(--main-accent-color), 1);
+    position: fixed;
+    display: none;
+    top: 12.5%;
+    left: 5%;
+    padding: .5em;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px 2px rgba(var(--main-accent-color), .6);
+}
+
+.skills-window h1 {
+    color: rgba(var(--main-accent-color), 1);
+    width: 100%;
+    text-align: center;
+    height: 10%;
+    padding: 0.25em;
+    font-size: 1.5em;
+}
+
+.skills-window ul {
+    position: absolute;
+    height: 87.5%;
+    width: 97%;
+    top: 10%;
+    overflow-y: auto;
+    display: block;
+    padding: .5em;
+    ;
+}
+
+.skills-window ul li {
+    height: 10%;
+    margin-bottom: 0.5em;
+    position: relative;
+    width: 100%;
+    padding: 0.25em;
+    overflow-y: auto;
+    display: inline-flex;
+    border-radius: 7px;
+    background: rgb(var(--sub-accent-color));
+    border: 1px solid rgba(var(--main-accent-color), 1);
+}
+
+.skills-window ul li:hover {
+    background: rgba(var(--main-color), .8);
+    box-shadow: 0px 0px 10px 2px rgba(var(--main-accent-color), 1);
+}
+
+.skill-title {
+    width: 90%;
+    height: 100%;
+    left: 10%;
+    top: 0;
+    display: table;
+    padding: 0.25em;
+    font-size: 1em;
+}
+
+.skill-title span {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.ski-im-con {
+    width: 3em;
+    height: 3em;
+    margin: auto;
+    margin-left: 0;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.ski-im-con img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.skills-window ul::-webkit-scrollbar {
+    width: .5em;
+    height: 20%;
+    border: 10px solid rgba(var(--main-accent-color), .6);
+    border-radius: 7px;
+}
+
+.skills-window ul::-webkit-scrollbar-thumb {
+    width: 10%;
+    height: 10%;
+    background: rgba(var(--main-color), 1);
+    border: 2px solid transparent;
+    border-radius: 15px;
+    background-clip: content-box;
+}
+
+.close-skill-tab {
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    background: rgb(255, 41, 41);
+    color: white;
+    border-radius: 50%;
+    display: table;
+}
+
+.close-skill-tab span {
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+@media screen and (min-width: 1366px) {
+    .abttag {
+        position: relative;
+        width: 100%;
+        top: 2%;
+        left: 0;
+    }
+    .abttag h1 {
+        position: absolute;
+        font-size: 2em;
+        width: 100%;
+        padding-right: 2em;
+        text-align: end;
+        vertical-align: middle;
+        /* color: rgb(var(--main-accent-color)); */
+        color: white;
+    }
+    .abt-container {
+        position: relative;
+        top: 5%;
+        height: 95%;
+        width: 100%;
+        display: block;
+        /* background-image: conic-gradient(from 
+        50deg, rgb(194, 194, 194) 
+        56.5deg 
+        62.5deg, rgb(36, 36, 36)
+        62deg 
+        197deg, rgb(184, 184, 184) 
+        10deg 
+        260deg,rgb(129, 129, 129) 
+        260deg 
+        360deg); */
+        transition: scale 1.5s linear;
+        overflow: hidden;
+    }
+    #abtstuff {
+        position: relative;
+        top: 5%;
+        height: 95%;
+        width: 100%;
+        /* background: rgb(var(--sub-accent-color)); */
+        background: rgb(196, 197, 146);
+        display: block;
+    }
+    .fullroom {
+        position: absolute;
+        top: 0%;
+        height: 100%;
+        width: 100%;
+        display: none;
+        transform-origin: center;
+        background: url('../res/assets/brickwall.jpg');
+        border: 2px solid black;
+        filter: brightness(var(--bri)) saturate(var(--sat));
+    }
+    .roof {
+        width: 120%;
+        height: 60%;
+        position: absolute;
+        top: -15%;
+        left: -10%;
+        display: block;
+    }
+    .roof img {
+        width: 100%;
+        height: 100%;
+    }
+    .ceillight {
+        width: 30%;
+        height: 20%;
+        position: absolute;
+        left: 35%;
+        top: 1%;
+        background: url('../res/assets/ceil-light-1.png') no-repeat;
+        background-position: center;
+        background-size: contain;
+        display: block;
+        transform-origin: center;
+        filter: brightness(var(--bri)) saturate(var(--sat));
+        transform: scaleX(1.52) scaleY(2);
+        display: block;
+    }
+    .frontwall {
+        background: url('../res/images/abt-wallpaper.png');
+        background-position: center;
+        background-size: cover;
+        display: block;
+        height: 60%;
+        width: 46%;
+        position: absolute;
+        top: 10%;
+        left: 27%;
+        border: 1px solid black;
+        filter: brightness(var(--bri)) saturate(var(--sat));
+        display: block;
+    }
+    .rooftl {
+        width: 35%;
+        height: 2px;
+        background: black;
+        position: absolute;
+        top: 0%;
+        left: 15%;
+        transform: rotate(30deg);
+        transform-origin: left top;
+        display: block;
+    }
+    .rooftr {
+        width: 35%;
+        height: 2px;
+        background: black;
+        position: absolute;
+        top: 0%;
+        right: 15%;
+        transform: rotate(-30deg);
+        transform-origin: right top;
+        display: block;
+    }
+    .roofbl {
+        width: 35%;
+        height: 2px;
+        background: black;
+        position: absolute;
+        bottom: 0%;
+        left: 8.75%;
+        transform: rotate(-36.5deg);
+        transform-origin: left bottom;
+    }
+    .roofbr {
+        width: 55%;
+        height: 2px;
+        background: black;
+        position: absolute;
+        bottom: 0%;
+        right: -5%;
+        transform: rotate(22.75deg);
+        transform-origin: right bottom;
+        display: block;
+    }
+    .wallpic {
+        width: 20%;
+        height: 40%;
+        position: relative;
+        display: block;
+        top: 25%;
+        left: 40%;
+        border-radius: 5px;
+        background: rgb(var(--main-color));
+        overflow: hidden;
+        filter: brightness(var(--bri)) saturate(var(--sat));
+        display: block;
+    }
+    .wallpic img {
+        width: 100%;
+        height: auto;
+        display: block;
+        position: absolute;
+        margin: 0;
+    }
+    .wallframe {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: block;
+        top: 0%;
+        left: 0%;
+        border-radius: 5px;
+        background: url('../res/assets/wallframe.png');
+        background-position: center;
+        background-size: contain;
+        display: block;
+    }
+    .frameglass {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: block;
+        top: 0%;
+        left: 0%;
+        border-radius: 5px;
+        background: url('../res/assets/glassframe.png');
+        background-position: center;
+        background-size: cover;
+        filter: brightness(var(--bri)) saturate(var(--sat));
+        display: block;
+    }
+    .abtish {
+        bottom: 2.5%;
+        height: auto;
+        position: absolute;
+        width: 100%;
+        display: block;
+    }
+    .abtish p {
+        color: rgb(var(--main-accent-color));
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        font-size: 0.75em;
+        font-weight: bold;
+    }
+    .abtbed {
+        width: 60%;
+        height: 35%;
+        position: absolute;
+        left: 20%;
+        bottom: 15%;
+        background: url('../res/assets/bed-3.png') no-repeat;
+        background-position: center;
+        background-size: fill;
+        display: block;
+        transform-origin: center;
+        transform: scale(1.1);
+        filter: brightness(var(--bri)) saturate(var(--sat));
+        display: block;
+    }
+    .worktable {
+        width: 50%;
+        height: 35%;
+        position: absolute;
+        left: 5.75%;
+        bottom: 16%;
+        background: url('../res/assets/table-1.png') no-repeat;
+        background-position: center;
+        background-size: contain;
+        display: block;
+        transform-origin: center;
+        transform: scaleY(0.75);
+        filter: brightness(var(--bri)) saturate(var(--sat));
+        display: block;
+    }
+    .aboutdoor {
+        width: 15%;
+        height: 60%;
+        position: absolute;
+        right: 0.0%;
+        bottom: 0%;
+        padding: 0;
+        display: block;
+        transform-origin: center;
+        filter: brightness(var(--bri)) saturate(var(--sat));
+        display: block;
+    }
+    #doorimg {
+        width: 100%;
+        height: 100%;
+        transition: all 1s linear;
+        display: block;
+    }
+    #hangboard {
+        display: block;
+        position: absolute;
+        top: 40%;
+        left: 70%;
+        width: 10%;
+        height: 5em;
+        transition: all 1s linear;
+        display: block;
+    }
+    .winup {
+        width: 12.5%;
+        height: 11.5em;
+        position: absolute;
+        left: 12.5%;
+        top: 15.5%;
+        padding: 0;
+        /* background-color:rgb(var(--sub-accent-color)); */
+        background: rgb(196, 197, 146);
+        background-position: center;
+        background-size: cover;
+        display: block;
+        transform-origin: center;
+        transform: skewY(15deg);
+        border-bottom: 5px solid rgb(var(--brown));
+        /* filter: brightness(var(--bri))  saturate(var(--sat));    */
+    }
+    .window {
+        width: 11.5%;
+        height: 40%;
+        position: absolute;
+        left: 12.5%;
+        top: 25.25%;
+        padding: 0;
+        display: block;
+        transform-origin: center;
+        transform: skewY(-25deg);
+        overflow: hidden;
+    }
+    .window img {
+        width: 100%;
+        height: 100%;
+        transition: all 1s linear;
+        transform: skewY(20deg);
+    }
+    .glass-win {
+        width: 12.5%;
+        height: 40%;
+        position: absolute;
+        left: 12.5%;
+        top: 25%;
+        padding: 0;
+        display: block;
+        border: 5px solid rgb(var(--brown));
+        /* filter:blur(2px); */
+        transform-origin: center;
+        transform: skewY(-25deg);
+    }
+    .winfr {
+        width: 12.5%;
+        height: 40%;
+        position: absolute;
+        left: 12.5%;
+        top: 25%;
+        padding: 0;
+        display: block;
+        border: 5px solid rgb(var(--brown));
+        /* filter:blur(2px); */
+        transform-origin: center;
+        transform: skewY(-25deg);
+        filter: brightness(var(--bri)) saturate(var(--sat));
+    }
+    .winfr img {
+        width: 100%;
+        height: 100%;
+    }
+    .curtains {
+        width: 14.5%;
+        height: 52%;
+        position: absolute;
+        left: 11.5%;
+        top: 26.5%;
+        padding: 0;
+        display: block;
+        transform-origin: center;
+        transform: skewY(25deg);
+        border-top: 5px solid rgb(var(--brown));
+        filter: brightness(var(--bri)) saturate(var(--sat));
+    }
+    .pullstring {
+        width: 0.25em;
+        height: 30%;
+        background: rgb(var(--brown));
+        position: absolute;
+        display: block;
+        top: 0%;
+        left: 2%;
+        filter: brightness(var(--bri)) saturate(var(--sat));
+    }
+    .puller {
+        width: 1em;
+        height: 1em;
+        background: rgb(var(--main-accent-color));
+        position: absolute;
+        bottom: -10%;
+        border-radius: 50%;
+        left: -0.45em;
+        transform: skewY(-25deg);
+    }
+    .curtains img {
+        position: absolute;
+        left: 5%;
+        width: 90%;
+        height: 100%;
+    }
+    .bookshelf {
+        width: 60%;
+        height: 35%;
+        position: absolute;
+        right: 2.5%;
+        top: 38%;
+        padding: 0;
+        background: url('../res/assets/bookshelf-1.png') no-repeat;
+        background-position: center;
+        background-size: contain;
+        display: block;
+        filter: brightness(var(--bri)) saturate(var(--sat));
+        transform-origin: center;
+    }
+    .holes-for-hook {
+        top: 0%;
+        position: relative;
+        width: 100%;
+        height: 4%;
+    }
+    .hooks {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .hooks .one {
+        position: absolute;
+        left: 35%;
+        margin: 1em;
+        width: 2em;
+        height: 2em;
+        border-radius: 50%;
+        background: rgb(var(--main-color));
+        box-shadow: inset 0px 0px 15px -2px black;
+    }
+    .hooks .two {
+        position: absolute;
+        right: 35%;
+        margin: 1em;
+        width: 2em;
+        height: 2em;
+        border-radius: 50%;
+        background: rgb(var(--main-color));
+        box-shadow: inset 0px 0px 15px -2px black;
+    }
+    .infocard {
+        display: inline-flex;
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        top: 30%;
+        left: 15%;
+        border-radius: 15px;
+        border: 3px solid rgb(var(--sub-accent-color));
+        color: rgb(var(--main-accent-color));
+        background: rgb(var(--main-color));
+        overflow: hidden;
+        display: block;
+    }
+    .infocard img {
+        width: 20em;
+        height: 20em;
+        position: absolute;
+        top: 12.50%;
+        left: 1%;
+        border-radius: 15px;
+    }
+    .infocard .inside-descr {
+        padding: 1.75em;
+        font-size: 1.5em;
+        position: absolute;
+        width: 65%;
+        height: 75%;
+        left: 27.50%;
+        background: red;
+        top: 10%;
+        color: rgb(var(--main-accent-color));
+        background: rgb(var(--sub-accent-color), 1);
+        text-align: left;
+        vertical-align: middle;
+        margin-left: 2em;
+        border-radius: 15px;
+        overflow-y: auto;
+    }
+    .inside-descr::-webkit-scrollbar {
+        width: .5em;
+        height: 20%;
+        border: 10px solid rgba(var(--main-accent-color), .6);
+        border-radius: 7px;
+    }
+    .inside-descr::-webkit-scrollbar-thumb {
+        width: 10%;
+        height: 10%;
+        background: rgba(var(--main-color), 1);
+        border: 2px solid transparent;
+        border-radius: 15px;
+        background-clip: content-box;
+    }
+    .forphoneabt {
+        width: 0;
+        height: 0;
+        display: none;
+        opacity: 0;
+    }
+    .forphoneabt .infocard {
+        display: none;
+    }
+    .skill-button {
+        width: 98%;
+        margin: 1%;
+        text-align: center;
+        height: fit-content;
+        padding: .25em;
+        border-radius: 7px;
+        background: rgba(var(--main-accent-color), 1);
+        color: rgba(var(--sub-accent-color), 1);
+        position: absolute;
+        bottom: 0;
+        font-size: 1em;
+        box-shadow: 0px 0px 25px -5px black;
+        left: 0%;
+        cursor: pointer;
+    }
+    .skills-window {
+        width: 30%;
+        height: 82.5%;
+        background: rgba(var(--sub-accent-color), .7);
+        color: rgba(var(--main-accent-color), 1);
+        position: fixed;
+        display: none;
+        top: 12.5%;
+        left: 35%;
+        padding: .5em;
+        border-radius: 10px;
+    }
+    .skills-window h1 {
+        color: rgba(var(--main-accent-color), 1);
+        width: 100%;
+        text-align: center;
+        height: 10%;
+        padding: 0.25em;
+        font-size: 2em;
+    }
+    .skills-window ul {
+        position: absolute;
+        height: 87.5%;
+        width: 97%;
+        top: 10%;
+        overflow-y: auto;
+        display: block;
+        padding: 1em;
+    }
+    .skills-window ul li {
+        height: 10%;
+        margin-bottom: 0.5em;
+        position: relative;
+        width: 100%;
+        padding: 0.25em;
+        overflow-y: auto;
+        display: inline-flex;
+        border-radius: 7px;
+        background: rgb(var(--sub-accent-color));
+        border: 1px solid rgba(var(--main-accent-color), 1);
+    }
+    .skills-window ul li:hover {
+        background: rgba(var(--main-color), .8);
+        box-shadow: 0px 0px 10px 2px rgba(var(--main-accent-color), 1);
+    }
+    .skill-title {
+        width: 90%;
+        height: 100%;
+        left: 10%;
+        top: 0;
+        display: table;
+        padding: 0.25em;
+        font-size: 1em;
+    }
+    .skill-title span {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: left;
+    }
+    .ski-im-con {
+        width: 3em;
+        height: 3em;
+        margin: auto;
+        margin-left: 0;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .ski-im-con img {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+    .skills-window ul::-webkit-scrollbar {
+        width: .5em;
+        height: 20%;
+        border: 10px solid rgba(var(--main-accent-color), .6);
+        border-radius: 7px;
+    }
+    .skills-window ul::-webkit-scrollbar-thumb {
+        width: 10%;
+        height: 10%;
+        background: rgba(var(--main-color), 1);
+        border: 2px solid transparent;
+        border-radius: 15px;
+        background-clip: content-box;
+    }
+    .close-skill-tab {
+        width: 1.5em;
+        height: 1.5em;
+        position: absolute;
+        top: 2.5%;
+        left: 2.5%;
+        background: rgb(255, 41, 41);
+        color: white;
+        border-radius: 50%;
+        display: table;
+        cursor: pointer;
+        box-shadow: 0px 0px 5px 2px rgba(var(--main-accent-color), 1);
+    }
+    .close-skill-tab span {
+        text-align: center;
+        vertical-align: middle;
+        display: table-cell;
+    }
+}
