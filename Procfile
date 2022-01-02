@@ -1,1 +1,1 @@
-web : gunicorn bot : ishita
+web: gunicorn ishita.wsgi
