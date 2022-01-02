@@ -29,7 +29,7 @@ DEBUG = False
 ALLOWED_HOSTS = ['*']
 
 
-DEBUG_COLLECTSTATIC=1
+heroku config:set DISABLE_COLLECTSTATIC=1
 
 # Application definition
 
