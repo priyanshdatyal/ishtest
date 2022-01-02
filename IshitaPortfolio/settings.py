@@ -139,7 +139,7 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 )
 
-
+django.heroku_settings(local())
 # DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # SECURE_SSL_REDIRECT = True
 # SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https','127.0.0.1')
