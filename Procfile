@@ -1,1 +1,1 @@
-wsgi : gunicorn ishita.wsgi --log-file - 
+web : gunicorn bot : ishita
