@@ -1,1 +1,1 @@
-web: gunicorn ishita.wsgi
+web: gunicorn IshitaPortfolio.wsgi
